@@ -20,7 +20,7 @@ public class BallMerger : MonoBehaviour
 
         Vector3 mergePosition = (ball1.transform.position + ball2.transform.position) / 2;
 
-        if (mergeBallSize < 10)
+        if (mergeBallSize < 2)
         {
             GameObject newBall = _ballFactory.CreateBall(mergeBallSize + 1, mergePosition);
             var ballPhysicsManager = newBall.GetComponent<BallPhysicsManager>();

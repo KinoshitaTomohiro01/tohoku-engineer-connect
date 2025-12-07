@@ -10,7 +10,7 @@ public class BallFactory : MonoBehaviour
 
     public GameObject CreateBall()
     {
-        int ballSize = UnityEngine.Random.Range(0, 5);
+        int ballSize = UnityEngine.Random.Range(0, 2);
         return CreateBall(ballSize, this.transform.position, false);    // アクティブなボール生成時は落下させない
     }
 
